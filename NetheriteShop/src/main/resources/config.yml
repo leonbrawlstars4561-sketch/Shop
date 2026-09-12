@@ -1,0 +1,170 @@
+# ============================================================
+#   NetheriteShop - Konfiguration
+# ============================================================
+# Preise und Items koennen hier angepasst werden, ohne dass das
+# Plugin neu kompiliert werden muss. Aenderungen erfordern einen
+# /reload oder einen Server-Neustart (bzw. euren eigenen Reload-
+# Befehl, falls ihr die Config zur Laufzeit neu ladet).
+#
+# Verzauberungs-IDs entsprechen den Vanilla-Minecraft-Registry-
+# Namen in Kleinbuchstaben, z.B.:
+#   protection, unbreaking, mending, respiration, aqua_affinity,
+#   thorns, feather_falling, depth_strider, sharpness, knockback,
+#   fire_aspect, looting, sweeping_edge, efficiency, fortune
+#
+# "slot" ist optional (0-53). Wird er weggelassen oder ist ungueltig,
+# wird automatisch der naechste freie Slot im 54er-GUI verwendet.
+
+shop:
+  items:
+
+    # ---------------- NETHERITE RUESTUNG (je Teil 5.000.000) ----------------
+    netherite_helmet:
+      slot: 10
+      material: NETHERITE_HELMET
+      display-name: "Netherite Helm"
+      price: 5000000
+      enchantments:
+        protection: 4
+        unbreaking: 3
+        mending: 1
+        respiration: 3
+        aqua_affinity: 1
+        thorns: 3
+
+    netherite_chestplate:
+      slot: 11
+      material: NETHERITE_CHESTPLATE
+      display-name: "Netherite Brustplatte"
+      price: 5000000
+      enchantments:
+        protection: 4
+        unbreaking: 3
+        mending: 1
+        thorns: 3
+
+    netherite_leggings:
+      slot: 12
+      material: NETHERITE_LEGGINGS
+      display-name: "Netherite Hose"
+      price: 5000000
+      enchantments:
+        protection: 4
+        unbreaking: 3
+        mending: 1
+        thorns: 3
+
+    netherite_boots:
+      slot: 13
+      material: NETHERITE_BOOTS
+      display-name: "Netherite Stiefel"
+      price: 5000000
+      enchantments:
+        protection: 4
+        unbreaking: 3
+        mending: 1
+        thorns: 3
+        feather_falling: 4
+        depth_strider: 3
+
+    # ---------------- NETHERITE WAFFE / WERKZEUG ----------------
+    netherite_sword:
+      slot: 15
+      material: NETHERITE_SWORD
+      display-name: "Netherite Schwert"
+      price: 6000000
+      enchantments:
+        sharpness: 5
+        unbreaking: 3
+        mending: 1
+        knockback: 2
+        fire_aspect: 2
+        looting: 3
+        sweeping_edge: 3
+
+    netherite_pickaxe:
+      slot: 16
+      material: NETHERITE_PICKAXE
+      display-name: "Netherite Spitzhacke"
+      price: 4000000
+      enchantments:
+        efficiency: 5
+        unbreaking: 3
+        mending: 1
+        fortune: 3
+
+    # ---------------- DIAMANT RUESTUNG (je Teil 250.000) ----------------
+    diamond_helmet:
+      slot: 28
+      material: DIAMOND_HELMET
+      display-name: "Diamant Helm"
+      price: 250000
+      enchantments:
+        protection: 4
+        unbreaking: 3
+        mending: 1
+        respiration: 3
+        aqua_affinity: 1
+        thorns: 3
+
+    diamond_chestplate:
+      slot: 29
+      material: DIAMOND_CHESTPLATE
+      display-name: "Diamant Brustplatte"
+      price: 250000
+      enchantments:
+        protection: 4
+        unbreaking: 3
+        mending: 1
+        thorns: 3
+
+    diamond_leggings:
+      slot: 30
+      material: DIAMOND_LEGGINGS
+      display-name: "Diamant Hose"
+      price: 250000
+      enchantments:
+        protection: 4
+        unbreaking: 3
+        mending: 1
+        thorns: 3
+
+    diamond_boots:
+      slot: 31
+      material: DIAMOND_BOOTS
+      display-name: "Diamant Stiefel"
+      price: 250000
+      enchantments:
+        protection: 4
+        unbreaking: 3
+        mending: 1
+        thorns: 3
+        feather_falling: 4
+        depth_strider: 3
+
+    # ---------------- DIAMANT WAFFE / WERKZEUG ----------------
+    # ACHTUNG: Platzhalterpreise gemaess Anfrage - bitte an eure Server-Economy anpassen!
+    diamond_sword:
+      slot: 33
+      material: DIAMOND_SWORD
+      display-name: "Diamant Schwert"
+      price: 600000   # [PLATZHALTER - BITTE ANPASSEN]
+      enchantments:
+        sharpness: 5
+        unbreaking: 3
+        mending: 1
+        knockback: 2
+        fire_aspect: 2
+        looting: 3
+        sweeping_edge: 3
+
+    diamond_pickaxe:
+      slot: 34
+      material: DIAMOND_PICKAXE
+      display-name: "Diamant Spitzhacke"
+      price: 400000   # [PLATZHALTER - BITTE ANPASSEN]
+      enchantments:
+        efficiency: 5
+        unbreaking: 3
+        mending: 1
+        fortune: 3

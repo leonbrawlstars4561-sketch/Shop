@@ -1,0 +1,23 @@
+name: NetheriteShop
+version: '1.0.0'
+main: de.shopplugin.ShopPlugin
+# WICHTIG: api-version muss eine von Paper unterstuetzte Versionsgruppe sein
+# (z.B. "1.21"). Passe dies an die tatsaechliche Version deines Servers an,
+# sobald deine Paper-Version das unterstuetzt.
+api-version: '1.21'
+author: YourName
+description: Vault-basiertes Shop-Plugin fuer verzauberte Netherite- und Diamant-Ausruestung
+depend: [Vault]
+folia-supported: false
+
+commands:
+  buy:
+    description: Oeffnet das Shop-GUI
+    usage: /buy
+    permission: shop.buy
+    permission-message: Du hast keine Berechtigung, den Shop zu benutzen.
+
+permissions:
+  shop.buy:
+    description: Erlaubt die Nutzung von /buy und den Kauf von Shop-Items
+    default: true
