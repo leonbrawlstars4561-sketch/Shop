@@ -23,11 +23,12 @@ jobs:
           cache: maven
 
       - name: Build mit Maven
+        working-directory: NetheriteShop
         run: mvn -B clean package
 
-      - name: Plugin-JAR als Artefakt hochladen
+      - name: Kompiliertes Plugin-JAR als Artefakt hochladen
         uses: actions/upload-artifact@v4
         with:
           name: NetheriteShop
-          path: target/*.jar
+          path: NetheriteShop/target/*.jar
           if-no-files-found: error
